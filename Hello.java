@@ -1,6 +1,5 @@
 public class Hello {
      public Hello() {
-         sayHello();
      }
 
      public void sayHello() {
@@ -8,6 +7,7 @@ public class Hello {
      }
      public static void main(String[] args) {
          Hello hello = new Hello();
+         hello.sayHello();
      }
  }
 
