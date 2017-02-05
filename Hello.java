@@ -13,7 +13,7 @@ public class Hello {
         String propName1 = name1.substring(0,1).toUpperCase() + name1.substring(1);
         String propName2 = name2.substring(0,1).toUpperCase() + name2.substring(1);
 
-        System.out.println("Hello, " + propName2);
+        System.out.println("Hello, " + propName2 + ". My name is " + propName1 + ". How are you today, " + propName2 + "?");
     }
     public static void main(String[] args) {
         Hello hello = new Hello();
