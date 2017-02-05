@@ -4,9 +4,20 @@ public class Hello {
     public void sayHelloToMe() {
         System.out.println("Hello, Chad");
     }
+    public void sayHelloToSomeone(String name) {
+        System.out.println("Hello, " + name);
+    }
     public static void main(String[] args) {
         Hello hello = new Hello();
-        hello.sayHelloToMe();
+        if (args.length == 0 ) {
+            hello.sayHelloToMe();
+        }
+        else if (args.length == 1) {
+            hello.sayHelloToSomeone(args[0]);
+        }
+        else {
+            System.out.println("you must have a name, right?");
+        }
     }
 }
 
