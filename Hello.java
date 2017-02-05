@@ -5,7 +5,9 @@ public class Hello {
         System.out.println("Hello, Chad");
     }
     public void sayHelloToSomeone(String name) {
-        System.out.println("Hello, " + name);
+        String out = name.substring(0,1).toUpperCase() + name.substring(1);
+
+        System.out.println("Hello, " + out);
     }
     public static void main(String[] args) {
         Hello hello = new Hello();
